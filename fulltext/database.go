@@ -14,7 +14,7 @@ import (
 
 type FullTextDatabase interface {
 	IndexFeature(context.Context, wof_geojson.Feature) error
-	Query(context.Context, string, ...filter.Filter) (spr.StandardPlacesResults, error)
+	QueryString(context.Context, string, ...filter.Filter) (spr.StandardPlacesResults, error)
 	Close(context.Context) error
 }
 
