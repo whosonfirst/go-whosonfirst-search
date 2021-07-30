@@ -12,7 +12,7 @@ import (
 )
 
 type FullTextDatabase interface {
-	IndexFeature(context.Context, []string) error
+	IndexFeature(context.Context, []byte) error
 	QueryString(context.Context, string, ...filter.Filter) (spr.StandardPlacesResults, error)
 	Close(context.Context) error
 }
