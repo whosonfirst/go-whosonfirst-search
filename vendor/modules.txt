@@ -30,7 +30,6 @@ github.com/whosonfirst/go-whosonfirst-flags/existential
 github.com/whosonfirst/go-whosonfirst-flags/geometry
 github.com/whosonfirst/go-whosonfirst-flags/placetypes
 # github.com/whosonfirst/go-whosonfirst-geojson-v2 v0.16.3
-## explicit
 github.com/whosonfirst/go-whosonfirst-geojson-v2
 github.com/whosonfirst/go-whosonfirst-geojson-v2/properties/whosonfirst
 github.com/whosonfirst/go-whosonfirst-geojson-v2/utils

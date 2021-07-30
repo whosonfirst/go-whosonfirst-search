@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"github.com/aaronland/go-roster"
 	"github.com/skelterjohn/geom"
-	wof_geojson "github.com/whosonfirst/go-whosonfirst-geojson-v2"
 	"github.com/whosonfirst/go-whosonfirst-search/filter"
 	"github.com/whosonfirst/go-whosonfirst-spatial"
 	"github.com/whosonfirst/go-whosonfirst-spr/v2"
@@ -15,7 +14,7 @@ import (
 )
 
 type SpatialDatabase interface {
-	IndexFeature(context.Context, wof_geojson.Feature) error
+	IndexFeature(context.Context, []byte) error
 	PointInPolygon(context.Context, *geom.Coord, ...filter.Filter) (spr.StandardPlacesResults, error)
 	PointInPolygonCandidates(context.Context, *geom.Coord, ...filter.Filter) ([]*spatial.PointInPolygonCandidate, error)
 	PointInPolygonWithChannels(context.Context, chan spr.StandardPlacesResult, chan error, chan bool, *geom.Coord, ...filter.Filter)
