@@ -1,7 +1,7 @@
 package spatial
 
 import (
-	"github.com/skelterjohn/geom"
+	"github.com/paulmach/orb"
 )
 
 type PointInPolygonCandidate struct {
@@ -9,5 +9,5 @@ type PointInPolygonCandidate struct {
 	FeatureId string
 	IsAlt     bool
 	AltLabel  string
-	Bounds    *geom.Rect
+	Bounds    *orb.Bound
 }
